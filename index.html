@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Andy Alvarado-Yepez, psychologist and epidemiologist at Universidad Peruana Cayetano Heredia (Emerge UPCH). Research on mental health in epidemics and climate change in Peru.">
+<meta property="og:title" content="Andy Alvarado-Yepez · Psychologist & Epidemiologist">
+<meta property="og:image" content="andy.jpg">
+<title>Andy Alvarado-Yepez · Psychologist & Epidemiologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1A1A; --muted:#555; --line:#E3DEDA; --paper:#FAF8F6;
+  --crimson:#A6192E; --crimson-d:#7E1222; --night:#1C1219; --rose:#F4E3E6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:17px}
+a{color:var(--crimson);text-underline-offset:3px}
+a:hover{color:var(--crimson-d)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-size:30px;font-weight:800;letter-spacing:-.4px}
+h3{font-size:20px;font-weight:700}
+p{margin:0;text-wrap:pretty}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--crimson)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:5;background:rgba(28,18,25,.92);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+nav .brand{color:#fff;font-family:"Inter Tight",sans-serif;font-weight:800;text-decoration:none;font-size:17px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;flex-wrap:wrap}
+nav ul a{color:#EAD9DD;text-decoration:none;font-size:14px;font-weight:500;padding:10px 10px;display:inline-block;border-radius:6px}
+nav ul a:hover{color:#fff;background:rgba(255,255,255,.08)}
+
+/* hero */
+.hero{position:relative;background:var(--night);color:#fff;overflow:hidden}
+.hero img.art{position:absolute;right:0;bottom:0;width:150%;min-width:1100px;max-width:none;height:auto;transform:translateX(18%);opacity:.95}
+.hero .wrap{position:relative;padding-top:80px;padding-bottom:140px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,68px);font-weight:800;letter-spacing:-1.5px}
+.hero .role{font-size:clamp(18px,2.2vw,22px);color:#F4C6CD;font-weight:600;margin-top:12px}
+.hero .lead{max-width:640px;font-size:clamp(17px,2vw,20px);color:#EFE6E8;margin-top:22px;line-height:1.55}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.photo{margin:0;justify-self:end;width:100%;max-width:340px;position:relative}
+.photo img{width:100%;height:auto;display:block;border-radius:16px;border:6px solid #fff;box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.photo figcaption{position:absolute;left:-18px;bottom:24px;background:var(--crimson);color:#fff;font-size:13px;font-weight:600;padding:8px 14px;border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 20px;border-radius:8px;font-weight:600;text-decoration:none;font-size:15px}
+.btn.primary{background:#fff;color:var(--crimson)}
+.btn.primary:hover{background:var(--rose);color:var(--crimson-d)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1);color:#fff}
+
+section{padding:84px 0;border-bottom:1px solid var(--line)}
+section.alt{background:var(--paper)}
+.head{display:flex;flex-direction:column;gap:10px;margin-bottom:36px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:56px;align-items:start}
+.about p+p{margin-top:16px}
+.facts{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--ink);margin:0}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts dt{color:var(--muted)} .facts dd{margin:0;font-weight:600;text-align:right}
+
+.side{display:flex;flex-direction:column;gap:28px}
+.field{margin:0;position:relative}
+.field img{width:100%;height:auto;display:block;border-radius:12px}
+.field figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* photo band */
+.band{position:relative;aspect-ratio:1380/705;min-height:440px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;border-bottom:0;padding:0}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.band .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,14,18,.72) 0%,rgba(20,14,18,.2) 30%,rgba(20,14,18,0) 45%)}
+.band .wrap{position:relative;width:100%;padding-top:40px;padding-bottom:40px}
+.band p.big{font-family:"Inter Tight",sans-serif;font-weight:700;font-size:clamp(24px,3vw,36px);line-height:1.2;max-width:780px;letter-spacing:-.5px;text-wrap:balance}
+.band p.credit{font-size:13px;color:#E6DADD;margin-top:14px}
+
+/* featured */
+.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.feature figure{margin:0;border:1px solid var(--line);background:#fff;padding:10px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.feature img{width:100%;height:auto;display:block}
+.feature figcaption{font-size:13px;color:var(--muted);padding:10px 4px 2px}
+.tag{display:inline-block;background:var(--rose);color:var(--crimson-d);font-weight:700;font-size:13px;padding:5px 10px;border-radius:4px}
+.feature h3{font-size:26px;margin:14px 0 14px}
+.when{margin-top:22px;border-left:3px solid var(--crimson);padding:4px 0 4px 18px;font-size:15px}
+.when b{display:block;font-size:16px}
+.findings{margin:20px 0 0;padding-left:20px}
+.findings li{margin-bottom:8px}
+
+/* research lines */
+.rhead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;margin-bottom:48px}
+.rhead .head{margin-bottom:0}
+.rhead .head p{color:#333;font-size:18px;margin-top:6px}
+.fw{margin:0}
+.fw img{width:100%;height:auto;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover;object-position:center 8%}
+.fw figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card{background:#fff;border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;gap:12px}
+.card .ico{width:44px;height:44px;color:var(--crimson)}
+.card p{color:#333;font-size:16px}
+
+/* projects */
+.list{border-top:2px solid var(--ink)}
+.item{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;padding:24px 0;border-bottom:1px solid var(--line)}
+.item .meta{font-size:14px;color:var(--muted);font-weight:600}
+.item h3{margin-bottom:6px}
+.item p{color:#333;font-size:16px}
+
+/* two col */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
+.two ul{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.two li{padding:16px 0;border-bottom:1px solid var(--line)}
+.two li b{display:block}
+.two li span{color:var(--muted);font-size:15px}
+
+/* contact */
+.contact{background:var(--night);color:#fff;border:0}
+.contact h2{color:#fff}
+.contact .eyebrow{color:#F4C6CD}
+.contact p{color:#EFE6E8;max-width:620px}
+.mail{display:inline-flex;align-items:center;gap:12px;margin-top:26px;font-size:clamp(20px,3vw,28px);font-weight:700;color:#fff;text-decoration:none;border-bottom:2px solid #F4C6CD;padding-bottom:4px}
+.mail:hover{color:#F4C6CD}
+.copy{margin-left:14px;background:transparent;border:1.5px solid rgba(255,255,255,.55);color:#fff;border-radius:8px;min-height:44px;padding:0 16px;font:600 14px Inter,sans-serif;cursor:pointer}
+.copy:hover{background:rgba(255,255,255,.1)}
+.orgs{display:flex;gap:28px;flex-wrap:wrap;margin-top:44px;color:#CDBFC3;font-size:14px}
+footer{background:var(--night);color:#A99A9F;font-size:13px;padding:22px 0 30px;border-top:1px solid rgba(255,255,255,.08)}
+
+@media (max-width:860px){
+  .rhead{grid-template-columns:minmax(0,1fr);gap:28px}
+  .band{min-height:420px;aspect-ratio:auto}
+  .field{max-width:360px}
+  .about,.feature,.two{grid-template-columns:minmax(0,1fr);gap:36px}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:36px;padding-top:48px;padding-bottom:170px}
+  .photo{order:-1;justify-self:start;max-width:220px}
+  .grid3{grid-template-columns:minmax(0,1fr)}
+  .item{grid-template-columns:minmax(0,1fr);gap:6px}
+  .hero img.art{width:260%;transform:translateX(30%)}
+  section{padding:64px 0}
+  nav ul{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Andy Alvarado-Yepez</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#astmh-2026">ASTMH 2026</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img class="art" src="hero.svg" alt="">
+  <div class="wrap">
+    <div>
+      <h1>Andy Alvarado-Yepez</h1>
+      <p class="role">Psychologist &amp; Epidemiologist · Universidad Peruana Cayetano Heredia</p>
+      <p class="lead">I study how epidemics and climate hazards shape mental health in Peru, from the risk perceptions of frontline health workers to the effects of heat and drought on young people in the Andes.</p>
+      <div class="actions">
+        <a class="btn primary" href="#astmh-2026">ASTMH 2026 · Poster 6340</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="andy.jpg" alt="Portrait of Andy Alvarado-Yepez" width="800" height="1000">
+      <figcaption>Born in Cusco · based in Lima</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="head"><span class="eyebrow">About</span><h2>Mental health at the intersection of epidemics and climate</h2></div>
+      <p>I am a psychologist by training and an epidemiologist by graduate study, born in Cusco. My work connects psychological science with epidemiological methods to understand how people, and especially health workers and adolescents, experience and respond to health emergencies and environmental change.</p>
+      <p>I am part of <b>Emerge</b>, the Emerging Diseases and Climate Change Research Unit at Universidad Peruana Cayetano Heredia (UPCH), and I collaborate with the <b>CLIMA</b> group on climate and health research.</p>
+    </div>
+    <div class="side">
+    <figure class="field">
+      <img src="field.jpg" alt="Andy Alvarado-Yepez in the field, wearing a sun hat" width="800" height="957" loading="lazy">
+      <figcaption>In the field</figcaption>
+    </figure>
+    <dl class="facts">
+      <div><dt>Based in</dt><dd>Lima, Peru</dd></div>
+      <div><dt>From</dt><dd>Cusco, Peru</dd></div>
+      <div><dt>Unit</dt><dd>Emerge · UPCH</dd></div>
+      <div><dt>Focus</dt><dd>Risk perception, climate &amp; mental health</dd></div>
+      <div><dt>Languages</dt><dd>Spanish · English</dd></div>
+    </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Andean landscape">
+  <img src="andes.jpg" alt="Snow-capped Andean peaks reflected in a high-altitude lake under a blue sky" width="1380" height="705" loading="lazy">
+  <div class="shade"></div>
+  <div class="wrap">
+    <p class="big">Climate change is reshaping the Andes, and with it the health and well-being of the people who live there.</p>
+    <p class="credit">Photo: Andy Alvarado-Yepez</p>
+  </div>
+</section>
+
+<section id="astmh-2026" class="alt">
+  <div class="wrap feature">
+    <figure>
+      <img src="poster-6340.jpg" alt="Poster 6340: Risk perception and psychological distress among healthcare workers during the first COVID-19 wave in Cusco, Peru" width="1400" height="1400">
+      <figcaption>Poster 6340 · ASTMH 2026 Annual Meeting</figcaption>
+    </figure>
+    <div>
+      <span class="tag">ASTMH 2026 · Poster 6340</span>
+      <h3>Risk Perception and Psychological Distress Among Healthcare Workers During the First COVID-19 Wave in Cusco, Peru</h3>
+      <p>Andy Alvarado-Yepez, Andrés G. Lescano, Fredy S. Monge-Rodríguez</p>
+      <ul class="findings">
+        <li><b>42.7%</b> of 241 frontline physicians, nurses and nursing technicians had psychological distress.</li>
+        <li>Higher multidimensional risk perception was only <b>weakly and imprecisely</b> associated with distress.</li>
+        <li>Perceiving information as <b>sufficient and trustworthy</b> was linked to 16% lower distress (aPR 0.84, 95% CI 0.76–0.95).</li>
+      </ul>
+      <div class="when">
+        <b>Poster Session A · Thursday, November 19, 2026 · 1:00–2:45 pm</b>
+        Gaylord National Resort &amp; Convention Center, National Harbor, Maryland
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="rhead">
+      <div class="head"><span class="eyebrow">Research lines</span><h2>What I work on</h2>
+        <p>My work combines epidemiological surveys with fieldwork alongside communities and health workers across Peru.</p></div>
+      <figure class="fw">
+        <img src="fieldwork.jpg" alt="Andy Alvarado-Yepez, wearing an Emerge UPCH vest, showing a tablet to a community member during fieldwork" width="900" height="1115" loading="lazy">
+        <figcaption>Fieldwork with Emerge UPCH</figcaption>
+      </figure>
+    </div>
+    <div class="grid3">
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+        <h3>Risk perception in health emergencies</h3>
+        <p>How health workers and students perceive epidemic threats and alerts, and how fear, stress and trust in information relate to their mental health.</p>
+      </article>
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l6-9 4 5 3-4 5 8z"/><circle cx="17" cy="6" r="2.5"/></svg>
+        <h3>Climate, heat, drought &amp; mental health</h3>
+        <p>Effects of extreme heat, drought and water insecurity on mental health and cognition, with a focus on adolescents in rural southern Peru; plus meteorosensitivity and psychological health.</p>
+      </article>
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Vaccines &amp; misinformation</h3>
+        <p>Perceptions, motivation and vaccination behaviour in the face of misinformation among university students, and prebunking as a way to build resilience.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Current projects</span><h2>Ongoing work</h2></div>
+    <div class="list">
+      <div class="item"><div class="meta">CLIMA · UPCH<br>Research assistant</div><div><h3>HeatSchools</h3><p>Research on extreme heat in school settings and its effects on children and adolescents.</p></div></div>
+      <div class="item"><div class="meta">Emerge · UPCH</div><div><h3>Percep Emerge</h3><p>Risk perception, fear and stress in response to epidemiological alerts among health students and professionals.</p></div></div>
+      <div class="item"><div class="meta">UPCH Interfaculty Seed Fund 2026<br>Awarded</div><div><h3>Vaccine perceptions, motivation and behaviour in the face of misinformation</h3><p>An interfaculty study of university students that tests prebunking strategies.</p></div></div>
+      <div class="item"><div class="meta">Systematic review<br>In progress</div><div><h3>Meteorosensitivity and psychological health</h3><p>A systematic review of measurement, determinants and mental health outcomes.</p></div></div>
+      <div class="item"><div class="meta">Doctoral project<br>In development</div><div><h3>Drought, mental health and cognition in Andean adolescents</h3><p>Drought and household water insecurity as exposures for mental health and neurocognitive outcomes in rural southern Peru.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="wrap two">
+    <div>
+      <div class="head"><span class="eyebrow">Teaching &amp; training</span><h2>In the classroom</h2></div>
+      <ul>
+        <li><b>Statistics</b><span>Lecturer, Faculty of Psychology, UPCH (2026)</span></li>
+        <li><b>Outbreak Analysis and Response</b><span>Course team, Emerge UPCH with CDC and ENSAP (2026 edition)</span></li>
+        <li><b>Coordination assistant, DCCS</b><span>Universidad Peruana Cayetano Heredia</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="head"><span class="eyebrow">Education</span><h2>Training</h2></div>
+      <ul>
+        <li><b>MSc in Epidemiological Research (2026)</b><span>Universidad Peruana Cayetano Heredia. Thesis: COVID-19 risk perception and psychological distress among health workers in Cusco during the first wave, 2020</span></li>
+        <li><b>Master's in Mental Health</b><span>Universidad César Vallejo (in progress)</span></li>
+        <li><b>Psychologist</b><span>Licensed psychologist</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Contact</span><h2>Let's talk about collaboration</h2></div>
+    <p>I am open to collaborations on mental health in health emergencies, climate and health, and risk communication in Latin America.</p>
+    <div>
+      <a class="mail" href="mailto:andy.alvarado@upch.pe">andy.alvarado@upch.pe</a>
+      <button class="copy" type="button" id="copyBtn">Copy email</button>
+    </div>
+    <div class="orgs" aria-label="Affiliations">
+      <span>Universidad Peruana Cayetano Heredia</span><span>Emerge · Emerging Diseases and Climate Change Research Unit</span><span>CLIMA · UPCH</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Andy Alvarado-Yepez · Lima, Peru. Header artwork: Andean ridges drawn as a first-wave epidemic curve.</div></footer>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', async function(){
+  const b=this;
+  try{ await navigator.clipboard.writeText('andy.alvarado@upch.pe'); b.textContent='Copied'; }
+  catch(e){ b.textContent='andy.alvarado@upch.pe'; }
+  setTimeout(()=>{ b.textContent='Copy email'; },2200);
+});
+</script>
+</body>
+</html>
